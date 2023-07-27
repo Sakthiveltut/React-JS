@@ -10,7 +10,7 @@ export function Display1(){
 export function Display2(){
     return(
         <>
-        <h3>Functional components are simply javascript functions.</h3>
+        <p>Functional components are simply javascript functions.</p>
         </>
     )
 }
