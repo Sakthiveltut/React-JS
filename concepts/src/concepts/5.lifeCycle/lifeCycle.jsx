@@ -24,7 +24,7 @@ export class LifeCycle extends React.Component{
     }
     componentDidUpdate()
     {
-        // document.getElementById('root').innerHTML = "New value is updated"this.state.initialValue;
+        document.getElementById('container').innerHTML = "New value is updated"+this.state.intialValue;
     }
     shouldComponentUpdate()
     {

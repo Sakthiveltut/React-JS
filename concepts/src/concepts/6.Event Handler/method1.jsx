@@ -1,13 +1,13 @@
 import React from "react";
 
-export class ReactState extends React.Component{
+export class EventHandler extends React.Component{
     constructor(){
         super();
         this.state = {initialValue:"Welcome",name:"Guys"}
     }
-    changevalue = () => 
+    changevalue = (a) => 
     {
-        this.setState({initialValue:"Hello"});
+        this.setState({initialValue:"Hello"+a});
     }
     render()
     {
@@ -15,7 +15,7 @@ export class ReactState extends React.Component{
         <>
         <h1>{this.state.initialValue} {this.state.name}</h1>
         <br/> 
-        <button type="button" onClick={this.changevalue}>Change Value</button>
+        <button type="button" onClick={()=>this.changevalue("world")}>Change Value</button>
         </>
         )
     }
